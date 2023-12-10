@@ -17,7 +17,7 @@ export function Cart() {
       <h1>Ваша корзина</h1>
       <div className='cartTbl'>
       <div className='cartUl'>
-        <div className='crtItem1'>Количество</div><div className='crtItem1'> Название</div><div className='crtItem1'>Цена</div><div className='crtItem1'></div>
+        <div className='crtItem1'>Количество</div><div className='crtItem1'> Название</div><div className='crtItem1'>Цена</div><div className='crtItem1'>Итого</div> <div className='crtItem1'></div>
       </div>
         {items.map((item) => (
           <div className="cartUl">
@@ -30,6 +30,9 @@ export function Cart() {
             <div className='crtItem1'>
               {Math.ceil(((item.price * (100 - item.discount)) / 100)*100)/100}$
             </div>
+            <div className='crtItem1'>
+              {Math.ceil(((item.price * (100 - item.discount)) / 100)*100 * item.quantity )/100}$
+            </div>
             <div className='crtItem1'>  
               <button onClick={() => updateItemQuantity(item.id, item.quantity - 1)}className="crtbt">
                 -
@@ -41,7 +44,7 @@ export function Cart() {
             </div>
           </div>
         ))}
-        <p className='total'>Общее количество:{Math.ceil(cartTotal*100)/100}</p>
+        <p className='total'>{Math.ceil(cartTotal*100)/100}$</p>
         <form>
           <input type="text" className="buytxt" value="Name"/>
           <input type="text" className="buytxt" value="Comments"/>   

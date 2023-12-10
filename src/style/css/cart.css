@@ -6,6 +6,7 @@ body, html {
   margin: 0; }
 
 html {
+  font-style: italic;
   font-family: 'magra'; }
 
 .logo, .Item1, .Item2 {
@@ -78,11 +79,12 @@ h1 {
 
 .total {
   text-align: right;
+  margin-left: 1170px;
   padding-right: 100px;
   font-size: 22px;
   margin-top: 30px;
-  margin-bottom: 30px; }
-
+  margin-bottom: 30px; 
+ position: fixed;}
 .buytxt {
   font-size: 18px;
   background-color: transparent;
@@ -102,7 +104,9 @@ h1 {
   height: 30px; }
 
 .empty {
-  font-size: 25px; }
+  font-size: 25px; 
+  text-align: center;
+}
 
 footer {
   margin-top: 75px; }
