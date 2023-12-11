@@ -5,6 +5,7 @@ import yellow from './photo/yellow.jpg';
 import green from './photo/green.jpg';
 import black from './photo/black.jpg';
 import additives from './photo/additivies.jpg';
+import Header from './items/header'; 
 
 import './style/css/main.css';
 
@@ -31,17 +32,9 @@ export class Main extends React.Component {
     render() {       
   return (
     <html>
-    <header>
-        <div className="header">
-            <Link to="/" className="logo">Special Tea</Link>
-                <ul className="container">
-                <Link to='/Assort' className="Item1">Ассортимент</Link>
-                <Link to='/Cart' className="Item1">Ваша корзина</Link>
-                <Link to='/About' className="Item1">О нас</Link>
-                </ul>
-        </div>
-    </header>
+   
     <body>
+        <Header></Header>
         <div className="rectangle">
             <img className="imgRec" src={back}/>
             <div className="txt">Настоящий чайный букет подобен дорогому вину, его невозможно повторить, секреты его составления 

@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import './style/css/aboutUs.css'
+import Footer from './items/footer'
 
 export const About=()=>{
     return(
@@ -61,35 +62,7 @@ export const About=()=>{
             вкусы. До встречи в Минске ;D
             </div>
         </body>
-        <footer>
-            <hr className="hrT"/>
-            <div className="fTop">
-            <ul className="footerTop">
-                <li>Shop</li>
-                <hr className="hr"/>
-                <Link to='/Assort' className='lnk'>All</Link>
-                <Link to='/Assort' className='lnk'>Чай</Link>
-                <Link to='/Assort' className='lnk'>Дополнения</Link>
-            </ul>
-            <ul className="footerTop">
-                <li>Share</li>
-                <hr className="hr"/>
-                <a href="https://www.instagram.com/" className='lnk'>Instagram</a>
-                <a href="https://google.com" className='lnk'>Сайт</a>
-            </ul>
-            <ul className="footerTop">
-                <li>Account</li>
-                <hr className="hr"/>
-                <Link to='/Cart' className='lnk'>Корзина</Link>
-            </ul>
-            <ul className="footerTop">
-                <li>Legal</li>
-                <hr className="hr"/>
-                <li className='lnk'>Условия и положения</li>
-                <li className='lnk'>Приватная политика</li>
-            </ul>
-            </div>
-        </footer>
+        <Footer></Footer>
 
         </html>
     );
