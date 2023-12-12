@@ -15,8 +15,6 @@ html {
 
 
 
-
-
 .rectangle {
   display: flex;
   align-items: flex-start;
@@ -41,7 +39,7 @@ html {
   width: 50%;
   margin-left: 10%;
   position: absolute;
-  font-size: 27px; }
+  font-size: 20px; }
 
 .box {
   display: flex;
@@ -126,6 +124,10 @@ html {
   width: 75px;
   height: 40px; }
 
+
+.footerTop {
+  list-style-type: none;
+  text-align: left; }
 
 .lnk, .lnk:visited, .lnk:active {
   display: block;

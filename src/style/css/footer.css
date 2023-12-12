@@ -1,10 +1,44 @@
-.fTop {
+ .fTop {
+    display: flex;
+    flex-direction: row;
     margin-right: 10%;
+    margin-left: 10%;
     justify-content: space-between;
     font-size: 20px;
-}
+} 
 .footerTop {
     list-style-type: none;
     text-align: left; 
 }
+
+
+@media screen and (max-width:700px) {
+    .fTop {
+        display: inline;
+        margin-right: 10%;
+        margin-left: 10%;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width:500px) {
+    .fTop {
+        display: inline;
+        margin-right: 10%;
+        margin-left: 10%;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+  }
+@media screen and (max-width:300px) {
+    .fTop {
+        display: inline;
+        margin-right: 10%;
+        margin-left: 10%;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+  }
+
   

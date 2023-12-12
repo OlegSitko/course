@@ -23,10 +23,11 @@ html {
   margin-bottom: 30px; }
 
 .about {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 10px;
   font-size: 18px;
-  text-align: center; }
+  text-align: center; 
+  
+}
 
 
 .lnk, .lnk:visited, .lnk:active {
